@@ -19,7 +19,7 @@ hitmarker.prototype.init = function() {
     self.clack.play()
     window.setTimeout(function() {
       self.marker.style.display = 'hidden'
-    }, 1000)
+    }, 500)
   })
 }
 
