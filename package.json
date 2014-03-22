@@ -1,0 +1,19 @@
+{
+  "name": "hitmarker",
+  "version": "0.0.1",
+  "description": "A HitMaker makes target and clack clack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kid-icarus/hitmarker.js.git"
+  },
+  "author": "Ryan Kois",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kid-icarus/hitmarker.js/issues"
+  },
+  "homepage": "https://github.com/kid-icarus/hitmarker.js"
+}
