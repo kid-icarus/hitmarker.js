@@ -1,4 +1,4 @@
-var hitmaker = function() {
+var hitmarker = function() {
   this.marker = new Image(300,300)
   this.marker.src = 'hitmaker.png'
   this.marker.style.position = 'absolute'
@@ -8,17 +8,19 @@ var hitmaker = function() {
   this.init()
 }
 
-hitmaker.prototype.init = function() {
+hitmarker.prototype.init = function() {
   var self = this
+  document.body.appendChild(self.marker)
+  console.log(self.marker)
   document.addEventListener('click', function(e) {
-    self.marker.style.top = e.y + 'px'
-    self.marker.style.left = e.x + 'px'
+    self.marker.style.top = e.y - 150 + 'px'
+    self.marker.style.left = e.x - 150 + 'px'
     self.marker.style.display = 'block'
     self.clack.play()
-    setTimeout(function() {
+    document.setTimeout(function() {
       self.marker.style.display = 'hidden'
-    }, 400)
+    }, 1000)
   })
 }
 
-module.exports = new hitmaker()
+module.exports = new hitmarker()
