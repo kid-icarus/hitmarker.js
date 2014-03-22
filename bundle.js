@@ -18,7 +18,7 @@ hitmarker.prototype.init = function() {
     self.marker.style.left = e.x - 150 + 'px'
     self.marker.style.display = 'block'
     self.clack.play()
-    document.setTimeout(function() {
+    window.setTimeout(function() {
       self.marker.style.display = 'hidden'
     }, 1000)
   })
